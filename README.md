@@ -1,6 +1,6 @@
 # VanillaJS Projects
 
-Series of small Projects using nothing but simple plain vanillaJS and ofcourse HTML and CSS.
+Series of small Projects using nothing but plain vanillaJS and of course HTML and CSS.
 
 Check out the respective branches to see their code.
 
