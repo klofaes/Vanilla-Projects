@@ -12,13 +12,13 @@ Live preview -- ***to be updated***
 
 ## Weather App
 
-yada yada ya
+Weather forecast: pay attention to your city's weather conditions
 
 Live preview -- ***to be updated***
 
 ## Movie Seat Booking
 
-yada yada ya
+ Provide users' the facility to book tickets for a show and to collect information regarding the films
 
 Live preview -- ***to be updated***
 
@@ -36,6 +36,6 @@ Live preview -- ***to be updated***
 
 ## CountDown
 
-yada yada ya
+The Countdown app has a minimalistic design count days, hours and minutes until your special event.
 
 Live preview -- ***to be updated***
