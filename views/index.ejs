@@ -1,100 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- // if you don't understand this, please read ejs components first -%>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
+   <%- include("header") -%>
 
-<body>
-   <div class="movie-container">
-      <label>Pick Your Movie:</label>
-      <select id="movie">
-         <option value="12">Movie1($12)</option>
-         <option value="10">Movie2($10)</option>
-         <option value="8">Movie3($8)</option>
-         <option value="6">Movie4($6)</option>
-      </select>
-      </div>
-      <ul class="showcase">
-       <div class="seats notOccupied">
-          <li>N/A</li>
-       </div>
-       <div class="seats Occupied">
-         <li>Occupied</li>
-      </div>
-      <div class="seats Selected">
-         <li>Selected</li>
-         </ul>
-      </div>
-      </div>
       <div class="container">
-         <div class="screen"></div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
+         <div class="movie-container">
+            <label>Pick Your Movie:</label>
+            <select id="movie">
+               <option value="12">Tenet($12)</option>
+               <option value="10">Greenland($10)</option>
+               <option value="8">Come Play($8)</option>
+               <option value="6">Peninsula($6)</option>
+            </select>
          </div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
+         <ul class="showcase">
+            <div class="seats notOccupied">
+               <li>N/A</li>
+            </div>
+            <div class="seats Occupied">
+               <li>Occupied</li>
+            </div>
+            <div class="seats Selected">
+               <li>Selected</li>
+         </ul>
+         <!---->
+         <div class="container-temp">
+            <div class="screen"></div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
+            <div class="row">
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+               <div class="seats"></div>
+            </div>
          </div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-         </div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-         </div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-         </div>
-         <div class="row">
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-            <div class="seats"></div>
-         </div>
+         <p class="text">You have booked <span id="count">0</span> for $ <span id="total">0</span></p>
       </div>
-      <p class="text">You have booked <span id="count">0</span> for $ <span id="total">0</span></p>
 
-      
-</body>
-
-</html>
+      <%- include("footer") -%>
