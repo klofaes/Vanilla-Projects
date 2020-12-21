@@ -1,28 +1,38 @@
-// Set the date counting down to
-var countDownDate = new Date("April 8, 2021 15:37:25").getTime();
+let eventDate = new Date("December 22, 2020 20:55:20").getTime();
+
 
 // Updating the countdown every 1 second
-var x = setInterval(function () {
+let endMsg = setInterval(function () {
 
-   //today's date and time
-   var now = new Date().getTime();
+   let displayMsg = "";
 
-   // distance between now and the count]down date
-   var distance = countDownDate - now;
+   let currentTime = new Date().getTime();
+   let remainingTime = eventDate - currentTime;
 
-   // Time calculations for days, hours, minutes and seconds
-   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   // ms is milliseconds
+   let msInYear = 1000 * 60 * 60 * 24 * 30 * 12;
+   let msInMonth = msInYear / 12;
+   let msInDay = msInMonth / 30;
+   let msInHour = msInDay / 24;
+   let msInMinute = msInHour / 60;
 
-   // Output
-   document.getElementById("event").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+   let yearsRemaining = Math.floor(remainingTime / msInYear);
+   let monthsRemaining = Math.floor((remainingTime % msInYear) / msInMonth);
+   let daysRemaining = Math.floor((remainingTime % msInMonth) / msInDay);
+   let hoursRemaining = Math.floor((remainingTime % msInDay) / msInHour);
+   let minutesRemaining = Math.floor((remainingTime % msInHour) / msInMinute);
+   let secondsRemaining = Math.floor((remainingTime % msInMinute) / 1000);
 
-   // If the count down is over, write some text
-   if (distance < 0) {
-      clearInterval(x);
+
+   displayMsg = `${yearsRemaining}y ${monthsRemaining}m ${daysRemaining}d ${hoursRemaining}h
+                     ${minutesRemaining}m ${secondsRemaining}s`;
+
+   document.getElementById("event").innerHTML = displayMsg;
+
+   // Endloop when timer goes below 0
+   if (remainingTime < 0) {
+      clearInterval(endMsg);
       document.getElementById("event").innerHTML = "EXPIRED";
    }
+
 }, 1000);
