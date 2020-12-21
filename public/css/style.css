@@ -24,16 +24,12 @@ body {
 .partition {
 	border-right: 1px solid green;
 }
-
-.time-box {
-	display: flex;
-}
-.days {
-	font-size: 50px;
-	margin: 10px;
-}
 .event-date {
 	text-align: center;
 	font-size: 20px;
 	padding: 10px;
+}
+#event {
+	text-align: center;
+	font-size: 60px;
 }
