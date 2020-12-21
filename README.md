@@ -20,8 +20,8 @@ Live preview -- ***to be updated***
 
  Movie Seat Booking is a simple web application made using basics of HTML , CSS and Vanialla JavaScript 
  for helping the user brush up their basics of Javascript especially. The code is simple and easy to understand 
- for the people starting from the scratch even.
- It is really helpful and wil fuction to provide users the facility to book tickets for a show and reserve their 
+ for the people who are starting from scratch even.
+ It is really helpful and will function to provide users the facility to book tickets for a show and reserve their 
  seats accordingly.
 
 Live preview -- ***to be updated***
