@@ -1,92 +1,93 @@
-<%- // if you don't understand this, please read ejs components first -%>
+<%- include("header") -%>
 
-   <%- include("header") -%>
-
-      <div class="container">
-         <div class="movie-container">
-            <label>Pick Your Movie:</label>
-            <select id="movie">
-               <option value="12">Tenet($12)</option>
-               <option value="10">Greenland($10)</option>
-               <option value="8">Come Play($8)</option>
-               <option value="6">Peninsula($6)</option>
-            </select>
-         </div>
-         <ul class="showcase">
-            <div class="seats notOccupied">
-               <li>N/A</li>
-            </div>
-            <div class="seats Occupied">
-               <li>Occupied</li>
-            </div>
-            <div class="seats Selected">
-               <li>Selected</li>
-         </ul>
-         <!---->
-         <div class="container-temp">
-            <div class="screen"></div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-            <div class="row">
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-               <div class="seats"></div>
-            </div>
-         </div>
-         <p class="text">You have booked <span id="count">0</span> for $ <span id="total">0</span></p>
-      </div>
-
-      <%- include("footer") -%>
+<div class="movie-container">
+  <label>Pick Your Movie:</label>
+  <select id="movie">
+    <option value="12">Movie1($12)</option>
+    <option value="10">Movie2($10)</option>
+    <option value="8">Movie3($8)</option>
+    <option value="6">Movie4($6)</option>
+  </select>
+  <ul class="legends">
+    <div class="legends-Occupied legends-child">
+      <li class="color occupied"></li>
+      <li>Occupied</li>
+    </div>
+    <div class="legends-Selected legends-child">
+      <li class="color selected"></li>
+      <li>Selected</li>
+    </div>
+  </ul>
+  <!-- <ul class="showcase">
+   
+  </ul> -->
+  <div class="container">
+   <div class="screen"></div>
+   <div class="seats">
+      <div class="row">
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat Occupied"></div>
+         <div class="seat Occupied"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+       </div>
+       <div class="row">
+         <div class="seat Occupied"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat Occupied"></div>
+         <div class="seat"></div>
+       </div>
+       <div class="row">
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+       </div>
+       <div class="row">
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+       </div>
+       <div class="row">
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+       </div>
+       <div class="row">
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+         <div class="seat"></div>
+       </div>
+   </div>
+  </div>
+  <p class="text">
+    You have booked <span id="count">0</span> for $ <span id="total">0</span>
+  </p>
+</div>
+<%- include("footer") -%>
